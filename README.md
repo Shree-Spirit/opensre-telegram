@@ -986,13 +986,6 @@ Thanks goes to these amazing people:
         </a>
     </td>
             <td align="center">
-        <a href="https://github.com/Gingiris">
-            <img src="https://avatars.githubusercontent.com/u/260675847?v=4" width="100" alt="Gingiris"/>
-            <br />
-            <sub><b>Gingiris</b></sub>
-        </a>
-    </td>
-            <td align="center">
         <a href="https://github.com/rameshkumarkoyya">
             <img src="https://avatars.githubusercontent.com/u/109403918?v=4" width="100" alt="rameshkumarkoyya"/>
             <br />
@@ -1013,8 +1006,6 @@ Thanks goes to these amazing people:
             <sub><b>Genmin</b></sub>
         </a>
     </td>
-		</tr>
-		<tr>
             <td align="center">
         <a href="https://github.com/Shree-Spirit">
             <img src="https://avatars.githubusercontent.com/u/238940682?v=4" width="100" alt="Shree-Spirit"/>
