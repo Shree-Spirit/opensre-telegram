@@ -1,5 +1,6 @@
-from pydantic import BaseModel
 from fastapi import FastAPI
+from pydantic import BaseModel
+
 from app.telegram_bot import send_message
 
 app = FastAPI()
