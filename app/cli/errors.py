@@ -1,15 +1,11 @@
 """Structured CLI error with optional suggestion and docs URL.
-
 Follows the pattern from `clig.dev <https://clig.dev/>`_ and flyctl's
 error system: every user-facing error can carry a human-readable
 suggestion (what to do next) and a docs link.
 """
-
 from __future__ import annotations
-
 import sys
 import typing as t
-
 import click
 
 
@@ -27,7 +23,7 @@ class OpenSREError(click.ClickException):
         super().__init__(message)
         self.suggestion = suggestion
         self.docs_url = docs_url
-        self.exit_code = exit_code
+        self.exit_code = exit_code  # type: ignore[misc]
 
     def format_message(self) -> str:
         parts = [self.message]
@@ -40,4 +36,5 @@ class OpenSREError(click.ClickException):
     def show(self, file: t.IO[t.Any] | None = None) -> None:
         if file is None:
             file = sys.stderr
-        click.echo(click.style("Error: ", fg="red", bold=True) + self.format_message(), file=file)
+        click.echo(click.style("Error: ", fg="red", bold=True) +
+                   self.format_message(), file=file)
