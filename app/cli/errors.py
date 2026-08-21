@@ -3,6 +3,7 @@ Follows the pattern from `clig.dev <https://clig.dev/>`_ and flyctl's
 error system: every user-facing error can carry a human-readable
 suggestion (what to do next) and a docs link.
 """
+
 from __future__ import annotations
 
 import sys
@@ -38,5 +39,4 @@ class OpenSREError(click.ClickException):
     def show(self, file: t.IO[t.Any] | None = None) -> None:
         if file is None:
             file = sys.stderr
-        click.echo(click.style("Error: ", fg="red", bold=True) +
-                   self.format_message(), file=file)
+        click.echo(click.style("Error: ", fg="red", bold=True) + self.format_message(), file=file)
