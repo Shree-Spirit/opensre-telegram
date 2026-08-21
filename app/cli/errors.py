@@ -4,8 +4,10 @@ error system: every user-facing error can carry a human-readable
 suggestion (what to do next) and a docs link.
 """
 from __future__ import annotations
+
 import sys
 import typing as t
+
 import click
 
 
