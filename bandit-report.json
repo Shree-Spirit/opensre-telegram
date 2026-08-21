@@ -1,6 +1,6 @@
 {
   "errors": [],
-  "generated_at": "2026-08-20T01:03:26Z",
+  "generated_at": "2026-08-21T01:06:39Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 61,
@@ -5614,7 +5614,7 @@
       "test_name": "hardcoded_bind_all_interfaces"
     },
     {
-      "code": "11 \n12     response = requests.post(url, json=payload)\n13 \n",
+      "code": "12 \n13     response = requests.post(url, json=payload)\n14 \n",
       "col_offset": 15,
       "end_col_offset": 47,
       "filename": "app/telegram_bot.py",
@@ -5625,9 +5625,9 @@
       },
       "issue_severity": "MEDIUM",
       "issue_text": "Call to requests without timeout",
-      "line_number": 12,
+      "line_number": 13,
       "line_range": [
-        12
+        13
       ],
       "more_info": "https://bandit.readthedocs.io/en/1.9.4/plugins/b113_request_without_timeout.html",
       "test_id": "B113",
